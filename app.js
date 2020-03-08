@@ -18,8 +18,9 @@ const app = () => {
   outline.style.strokeDashoffset = outlineLength;
 
   //pick different sounds
+
   sounds.forEach(sound => {
-    sounds.addEventListener('click', function() {
+    sound.addEventListener('click', function() {
       song.src = this.getAttribute('data-sound');
       video.src = this.getAttribute('data-video');
       checkPlaying(song);
